@@ -15,8 +15,6 @@ public class HashSetDemo {
         hs.add("Gamma");
         hs.add("Omega");
 
-
         System.out.println(hs);
-
     }
 }
