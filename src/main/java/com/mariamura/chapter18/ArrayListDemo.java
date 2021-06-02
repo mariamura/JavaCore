@@ -3,9 +3,7 @@ package com.mariamura.chapter18;
 /* get: o(1)
 *  add: o(1)
 *  contains: o(n)
-*  next: o(1)
-*  remove(0): o(n)
-*  iterator.remove: o(n)*/
+*  remove(0): o(n) */
 
 import java.util.ArrayList;
 
