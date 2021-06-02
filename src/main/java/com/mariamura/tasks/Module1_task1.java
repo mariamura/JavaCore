@@ -8,5 +8,8 @@ package com.mariamura.tasks;
 */
 
 public class Module1_task1 {
+    public static void main(String[] args) {
+
+    }
 
 }
