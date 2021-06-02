@@ -7,4 +7,5 @@ package com.mariamura.tasks;
 */
 
 public class Module1_task2 {
+
 }
