@@ -18,9 +18,5 @@ public class ForEachDemo {
         int sum = 0;
         for (int i: vals) sum+=i;
         System.out.println("Sum of vals elements: " + sum);
-
-
-
-
     }
 }
