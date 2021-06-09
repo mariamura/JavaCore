@@ -16,6 +16,8 @@ class Address {
         state = st;
         code = cd;
     }
+
+    @Override
     public String toString() {
         return name + "\n" + street + "\n"
                 + city + " " + state + " " + code;

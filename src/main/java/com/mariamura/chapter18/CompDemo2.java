@@ -1,11 +1,11 @@
 package com.mariamura.chapter18;
 
-import java.util.Comparator;
 import java.util.TreeSet;
 
-public class CompDemo {
+public class CompDemo2 {
     public static void main(String[] args) {
-        TreeSet<String> ts = new TreeSet<>(new MyComp());
+        TreeSet<String> ts = new TreeSet<>((aStr, bStr) -> bStr.compareTo(aStr));
+        //or we can use Comparator.reverseOrder() instead
         ts.add("C");
         ts.add("A");
         ts.add("B");
@@ -19,16 +19,5 @@ public class CompDemo {
 
         System.out.println();
 
-    }
-}
-
-class MyComp implements Comparator<String> {
-
-    @Override
-    public int compare(String a, String b) {
-        String aStr, bStr;
-        aStr = a;
-        bStr = b;
-        return bStr.compareTo(aStr);
     }
 }
