@@ -5,6 +5,7 @@ package com.mariamura.chapter18;
  *  next(iterator?): o(h.capacity/n) */
 
 import java.util.HashSet;
+import java.util.Iterator;
 
 public class HashSetDemo {
     public static void main(String[] args) {
@@ -14,6 +15,7 @@ public class HashSetDemo {
         hs.add("Alpha");
         hs.add("Gamma");
         hs.add("Omega");
+
 
         System.out.println(hs);
     }

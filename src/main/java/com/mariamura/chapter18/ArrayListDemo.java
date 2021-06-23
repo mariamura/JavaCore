@@ -23,6 +23,8 @@ public class ArrayListDemo {
         al.add("F");
         al.add(1, "A2");
 
+
+
         System.out.println("al size after elements added: " + al.size());
 
         //arraylist content
