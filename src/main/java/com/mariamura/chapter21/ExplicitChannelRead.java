@@ -27,7 +27,7 @@ public class ExplicitChannelRead {
                     mBuf.rewind();
                     for(int i=0; i<count; i++) System.out.print((char)mBuf.get());
                 }
-            } while (count !=1);
+            } while (count ==1);
             System.out.println();
         }catch (IOException e){
             System.out.println(e);
