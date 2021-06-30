@@ -9,7 +9,7 @@ import java.nio.file.InvalidPathException;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
-public class MapChannelWrite {
+public class MappedChannelWrite {
     public static void main(String[] args) {
         try(FileChannel fchan = (FileChannel) Files.newByteChannel(Paths.get("test.txt"),
                 StandardOpenOption.WRITE,
