@@ -16,7 +16,7 @@ class NewThread3 implements Runnable {
     public void run() {
         try {
             for(int i =5; i>0; i--) {
-                System.out.println(name + i);
+                System.out.println(name + ": " + i);
                 Thread.sleep(1000);
             }
         }catch (InterruptedException e) {
@@ -31,12 +31,9 @@ public class MultiThreadDemo {
         new NewThread3("one");
         new NewThread3("two");
         new NewThread3("three");
-        
+
         try {
-            for(int i =5; i>0; i--) {
-                System.out.println("Main thread: " + i);
-                Thread.sleep(1000);
-            }
+            Thread.sleep(10000);
         }catch (InterruptedException e) {
             System.out.println("Main thread interrupted!");
         }
