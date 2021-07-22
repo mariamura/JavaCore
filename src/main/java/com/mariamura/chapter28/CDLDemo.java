@@ -7,6 +7,8 @@ public class CDLDemo {
         CountDownLatch cdl = new CountDownLatch(5);
         System.out.println("Start thread");
 
+        
+
 
         new MyThread(cdl);
         try {
