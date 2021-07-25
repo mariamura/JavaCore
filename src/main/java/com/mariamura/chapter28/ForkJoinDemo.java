@@ -35,12 +35,23 @@ public class ForkJoinDemo {
         double[] nums = new double[100000];
 
         for(int i = 0; i<nums.length; i++) {
-            nums[i] = (double) i;
+            nums[i] = i;
         }
 
         System.out.println("Part initial array..");
         for(int i = 0; i<10; i++) {
             System.out.print(nums[i] + " ");
         }
+
+        SqrtTransform task = new SqrtTransform(nums, 0, nums.length);
+        forkJoinPool.invoke(task);
+
+        System.out.println();
+
+        for(int i = 0; i<10; i++) {
+            System.out.format("%.4f", nums[i]);
+            System.out.println();
+        }
+
     }
 }
